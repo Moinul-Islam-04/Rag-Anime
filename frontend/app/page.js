@@ -384,8 +384,7 @@ export default function Home() {
       {toast && <div className="toast">{toast}</div>}
 
       <div className="footer">
-        Grounded in AniList · embeddings &amp; reranking by Voyage · written by
-        Claude. {userId ? `Session: ${userId.slice(0, 8)}…` : ""}
+        Grounded in AniList · embeddings &amp; reranking by Voyage.
       </div>
     </main>
   );
