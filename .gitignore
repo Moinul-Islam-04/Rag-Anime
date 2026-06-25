@@ -1,0 +1,22 @@
+# Secrets
+**/.env
+**/.env.local
+
+# Python
+**/__pycache__/
+*.pyc
+backend/.venv/
+backend/venv/
+
+# Runtime SQLite (resets are expected on the free tier)
+backend/data/app.db
+
+# Node / Next
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# The prebuilt Chroma index + AniList JSON ARE committed (read-only, ~3 MB)
+# so the backend deploys with no re-ingest:
+#   backend/data/anime.json
+#   backend/data/chroma/

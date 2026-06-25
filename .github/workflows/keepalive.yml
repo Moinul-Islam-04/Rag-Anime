@@ -1,0 +1,22 @@
+# Pings the backend health endpoint every ~12 min so the free Render instance
+# doesn't spin down (avoids cold starts + keeps the ephemeral SQLite alive
+# between deploys). Edit BACKEND_URL after your first deploy.
+#
+# Note: GitHub disables scheduled workflows after 60 days of repo inactivity,
+# and cron timing is best-effort. For rock-solid uptime, also/instead use a
+# free UptimeRobot monitor on <backend>/health.
+name: keepalive
+
+on:
+  schedule:
+    - cron: "*/12 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping /health
+        run: |
+          BACKEND_URL="https://REPLACE-ME.onrender.com"
+          curl -fsS --max-time 90 "$BACKEND_URL/health" && echo " — ok"

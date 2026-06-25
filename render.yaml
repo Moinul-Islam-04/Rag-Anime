@@ -1,0 +1,22 @@
+# Render Blueprint — deploys the FastAPI backend as a free Docker web service.
+# In the Render dashboard: New + → Blueprint → connect this repo. It reads this
+# file. Set the secret env vars (marked sync:false) when prompted.
+services:
+  - type: web
+    name: anime-rag-backend
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false        # paste in dashboard
+      - key: VOYAGE_API_KEY
+        sync: false        # paste in dashboard
+      - key: DATABASE_URL
+        sync: false        # Neon Postgres pooled connection string (persists saves/votes/history)
+      - key: ALLOWED_ORIGINS
+        sync: false        # set to your Vercel URL, e.g. https://anime-rag.vercel.app
+      - key: VOYAGE_MIN_INTERVAL
+        value: "21"        # free Voyage tier (3 RPM). Set "0" if you add a Voyage payment method.

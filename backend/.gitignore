@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Runtime SQLite (saves/votes/history) — not committed.
+data/app.db
+
+# The prebuilt index + AniList JSON ARE committed so deploys need no re-ingest:
+#   data/anime.json
+#   data/chroma/
