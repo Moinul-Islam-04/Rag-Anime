@@ -1,10 +1,13 @@
 # Pings the backend health endpoint every ~12 min so the free Render instance
-# doesn't spin down (avoids cold starts + keeps the ephemeral SQLite alive
-# between deploys). Edit BACKEND_URL after your first deploy.
+# doesn't spin down (avoids cold starts + keeps saves/votes warm between deploys).
 #
-# Note: GitHub disables scheduled workflows after 60 days of repo inactivity,
-# and cron timing is best-effort. For rock-solid uptime, also/instead use a
-# free UptimeRobot monitor on <backend>/health.
+# Set the URL WITHOUT editing this file: repo → Settings → Secrets and variables →
+# Actions → Variables → New variable, name BACKEND_URL, value https://<your>.onrender.com
+# If unset, it falls back to the render.yaml service name below.
+#
+# Note: GitHub disables scheduled workflows after 60 days of repo inactivity, and
+# cron timing is best-effort. For rock-solid uptime, also use a free UptimeRobot
+# monitor on <backend>/health.
 name: keepalive
 
 on:
@@ -17,6 +20,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping /health
+        env:
+          BACKEND_URL: ${{ vars.BACKEND_URL || 'https://anime-rag-backend.onrender.com' }}
         run: |
-          BACKEND_URL="https://REPLACE-ME.onrender.com"
-          curl -fsS --max-time 90 "$BACKEND_URL/health" && echo " — ok"
+          echo "Pinging $BACKEND_URL/health"
+          # --retry-all-errors + a generous max-time ride out the free-tier cold
+          # start (Render returns 502/503 for ~30-60s while the instance wakes),
+          # so a sleeping backend triggers a wake-up instead of failing the job.
+          curl -fsS \
+            --retry 6 --retry-all-errors --retry-delay 20 \
+            --connect-timeout 15 --max-time 90 \
+            "$BACKEND_URL/health" && echo " — ok"

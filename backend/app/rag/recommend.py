@@ -11,6 +11,7 @@ Anti-hallucination guarantees (enforced in code, not just the prompt):
 import json
 
 from app import config
+from app.franchise import franchise_of, referenced_franchises
 from app.meta import get_meta
 from app.models import Rec, RecommendResponse, Source, Stream
 from app.rag.retrieve import retrieve
@@ -143,6 +144,28 @@ def recommend(query: str, user_id: str = "anon") -> RecommendResponse:
             recs=[],
             grounded=False,
             message="Every match was a title you down-voted. Try a different query.",
+        )
+
+    # No-sequel filtering: don't hand back a show the user named (or its other
+    # seasons), and collapse multiple entries of the same franchise to one rec
+    # (so "like AOT" can't surface AOT S1 *and* AOT Final Season).
+    banned_franchises = referenced_franchises(query)
+    seen_franchises: set[str] = set()
+    deduped: list[dict] = []
+    for c in candidates:  # already ordered best-first by the reranker
+        fr = franchise_of(c["metadata"]["source_url"])
+        if fr is not None:
+            if fr in banned_franchises or fr in seen_franchises:
+                continue
+            seen_franchises.add(fr)
+        deduped.append(c)
+    candidates = deduped
+    if not candidates:
+        return RecommendResponse(
+            query=query,
+            recs=[],
+            grounded=False,
+            message="The only matches were the shows you named (or their sequels). Try a broader query.",
         )
 
     # Map of allowed citation URLs -> canonical title, from the retrieved set.

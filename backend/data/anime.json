@@ -45,6 +45,40 @@
         "color": "#00CC36"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 23775,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 23777,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 25777,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 31374,
+        "type": "SPIN_OFF"
+      },
+      {
+        "mal_id": 18397,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 42091,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 25781,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 36106,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/16498"
   },
   {
@@ -87,6 +121,16 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/81091393",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 40456,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 49926,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/101922"
@@ -144,6 +188,16 @@
         "site": "Hulu",
         "url": "https://www.hulu.com/series/jujutsu-kaisen-382ec8bf-3650-4cde-94db-ecd18665f9e0",
         "color": "#1CE783"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 48561,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 51009,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/113415"
@@ -204,6 +258,12 @@
         "color": "#0D69C0"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 2994,
+        "type": "SUMMARY"
+      }
+    ],
     "url": "https://anilist.co/anime/1535"
   },
   {
@@ -249,6 +309,20 @@
         "site": "iQ",
         "url": "https://www.iq.com/album/1djwf83pp09",
         "color": "#00CC36"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 33486,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 33929,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 60593,
+        "type": "SPIN_OFF"
       }
     ],
     "url": "https://anilist.co/anime/21459"
@@ -308,6 +382,32 @@
         "color": "#FF0000"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 13271,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 136,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 137,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 138,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 139,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 19951,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/11061"
   },
   {
@@ -364,6 +464,20 @@
         "site": "Bilibili TV",
         "url": "https://www.bilibili.tv/media/36279",
         "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 31772,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 34134,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 31704,
+        "type": "PREQUEL"
       }
     ],
     "url": "https://anilist.co/anime/21087"
@@ -425,6 +539,192 @@
         "color": "#2FA3F9"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 466,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 1094,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 1237,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 1238,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 2020,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 2386,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 2490,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 12001,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 16239,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 16468,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 15323,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 19123,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 25161,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 31289,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 32051,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 33338,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 36215,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 459,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 460,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 461,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 462,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 463,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 464,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 465,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 2107,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 3848,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 4155,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 9999,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 12859,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 31490,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 37902,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 8740,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 38234,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 28683,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 2385,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 33606,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 5252,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 38419,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 50410,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 56055,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 57557,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 60022,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 60108,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 61293,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 62233,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 60790,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/21"
   },
   {
@@ -473,6 +773,20 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/80023687",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 31297,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 27899,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 30458,
+        "type": "PREQUEL"
       }
     ],
     "url": "https://anilist.co/anime/20605"
@@ -533,6 +847,24 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 16498,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 35760,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 36702,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 42091,
+        "type": "SUMMARY"
+      }
+    ],
     "url": "https://anilist.co/anime/20958"
   },
   {
@@ -584,6 +916,24 @@
         "site": "iQ",
         "url": "https://www.iq.com/album/s8lu95if3p",
         "color": "#00CC36"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 6421,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 9135,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 121,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 7902,
+        "type": "SPIN_OFF"
       }
     ],
     "url": "https://anilist.co/anime/5114"
@@ -646,6 +996,48 @@
         "color": "#00CC36"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 1735,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 442,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 594,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 761,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 936,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 1074,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 2144,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 7367,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 10659,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 53236,
+        "type": "SUMMARY"
+      }
+    ],
     "url": "https://anilist.co/anime/20"
   },
   {
@@ -699,6 +1091,24 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 20021,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 21881,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 42916,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 63736,
+        "type": "ALTERNATIVE"
+      }
+    ],
     "url": "https://anilist.co/anime/11757"
   },
   {
@@ -746,6 +1156,7 @@
         "color": "#002BE7"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/21519"
   },
   {
@@ -778,6 +1189,7 @@
         "color": "#E50914"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/20954"
   },
   {
@@ -836,6 +1248,24 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 25777,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 38524,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 42091,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 36106,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/99147"
   },
   {
@@ -886,6 +1316,20 @@
         "site": "Crunchyroll",
         "url": "https://www.crunchyroll.com/my-hero-academia-dubs",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 36456,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 31964,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 35459,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/21856"
@@ -946,6 +1390,16 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 38524,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 48583,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/110277"
   },
   {
@@ -996,6 +1450,12 @@
         "color": "#00CC36"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 39617,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/101759"
   },
   {
@@ -1032,6 +1492,32 @@
         "site": "Crunchyroll",
         "url": "https://www.crunchyroll.com/assassination-classroom",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 30654,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 28405,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 33513,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 34389,
+        "type": "SPIN_OFF"
+      },
+      {
+        "mal_id": 19759,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 62421,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/20755"
@@ -1094,6 +1580,20 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 37510,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 37504,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 36616,
+        "type": "SUMMARY"
+      }
+    ],
     "url": "https://anilist.co/anime/21507"
   },
   {
@@ -1152,6 +1652,12 @@
         "color": "#E50914"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 57555,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/127230"
   },
   {
@@ -1208,6 +1714,24 @@
         "color": "#FF0000"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 33142,
+        "type": "SPIN_OFF"
+      },
+      {
+        "mal_id": 33569,
+        "type": "SPIN_OFF"
+      },
+      {
+        "mal_id": 36286,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 39587,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/21355"
   },
   {
@@ -1254,6 +1778,12 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/80041089",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 28069,
+        "type": "PREQUEL"
       }
     ],
     "url": "https://anilist.co/anime/20665"
@@ -1307,6 +1837,20 @@
         "site": "Crunchyroll",
         "url": "https://www.crunchyroll.com/attack-on-titan-dubs",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 35760,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 40028,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 42091,
+        "type": "SUMMARY"
       }
     ],
     "url": "https://anilist.co/anime/104578"
@@ -1369,6 +1913,56 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 20,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 2472,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 4437,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 6325,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 8246,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 10589,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 13667,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 16870,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 32365,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 34566,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 10686,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 53236,
+        "type": "SUMMARY"
+      }
+    ],
     "url": "https://anilist.co/anime/1735"
   },
   {
@@ -1413,6 +2007,7 @@
         "color": "#E50914"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/21234"
   },
   {
@@ -1466,6 +2061,20 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 33486,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 38408,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 36896,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/100166"
   },
   {
@@ -1502,6 +2111,28 @@
         "site": "Bilibili TV",
         "url": "https://www.bilibili.tv/en/media/37207",
         "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 10863,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 27957,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 32188,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 11577,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 4975,
+        "type": "PARENT"
       }
     ],
     "url": "https://anilist.co/anime/9253"
@@ -1561,6 +2192,24 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 29755,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 30364,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 28891,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 25303,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/20464"
   },
   {
@@ -1614,6 +2263,24 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 40031,
+        "type": "SPIN_OFF"
+      },
+      {
+        "mal_id": 33950,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 48585,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 61967,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/97940"
   },
   {
@@ -1662,6 +2329,12 @@
         "site": "Bilibili",
         "url": "https://www.bilibili.com/bangumi/media/md134932",
         "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 38329,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/101291"
@@ -1722,6 +2395,12 @@
         "color": "#00CC36"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 50602,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/140960"
   },
   {
@@ -1763,6 +2442,12 @@
         "site": "iQ",
         "url": "https://www.iq.com/album/ofodkfc1h1",
         "color": "#00CC36"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 40591,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/101921"
@@ -1823,6 +2508,12 @@
         "color": "#002BE7"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 40852,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/105333"
   },
   {
@@ -1853,6 +2544,16 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/80182123",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 37095,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 39741,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/21827"
@@ -1898,6 +2599,16 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 24991,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 33674,
+        "type": "PREQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/19815"
   },
   {
@@ -1929,6 +2640,16 @@
         "site": "Crunchyroll",
         "url": "https://www.crunchyroll.com/series/G6WEV3WM6/noragami",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 30503,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 20767,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/20447"
@@ -1977,6 +2698,20 @@
         "site": "Tubi TV",
         "url": "https://tubitv.com/series/300007821/toradora",
         "color": "#7408FF"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 6127,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 11553,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 51200,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/4224"
@@ -2035,6 +2770,7 @@
         "color": "#FF0000"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/20613"
   },
   {
@@ -2075,6 +2811,12 @@
         "site": "Crunchyroll",
         "url": "https://www.crunchyroll.com/series/GEXH3WKK0/vinland-saga",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 49387,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/101348"
@@ -2136,6 +2878,24 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 36456,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 39565,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 41587,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 42603,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/104276"
   },
   {
@@ -2193,6 +2953,16 @@
         "color": "#FF9900"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 14753,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 54856,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/124080"
   },
   {
@@ -2231,6 +3001,20 @@
         "site": "YouTube",
         "url": "https://youtube.com/playlist?list=PLwLSw1_eDZl3572W1HJjIkZyW-0GGVUVq&si=mP5IwBPobYKC27_K",
         "color": "#FF0000"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 30347,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 31722,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 50315,
+        "type": "SPIN_OFF"
       }
     ],
     "url": "https://anilist.co/anime/20789"
@@ -2276,52 +3060,21 @@
         "color": "#FF0000"
       }
     ],
-    "url": "https://anilist.co/anime/21202"
-  },
-  {
-    "mal_id": 40456,
-    "title": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
-    "synopsis": "This Demon Slayer movie sees Tanjiro Kamado and friends from the Demon Slayer corps board the Infinity Train on a new mission to investigate a mysterious series of disappearances, perpetrated by a demon who has been tormenting people and killing the demon slayers who oppose it.",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Drama",
-      "Fantasy",
-      "Mystery",
-      "Supernatural"
-    ],
-    "tags": [
-      "Demons",
-      "Swordplay",
-      "Shounen",
-      "Trains",
-      "Curses",
-      "Male Protagonist",
-      "Body Horror",
-      "Super Power"
-    ],
-    "score": 84,
-    "episodes": 1,
-    "year": 2020,
-    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112151-1qlQwPB1RrJe.png",
-    "streaming": [
+    "relations": [
       {
-        "site": "Netflix",
-        "url": "https://www.netflix.com/title/81410810",
-        "color": "#E50914"
+        "mal_id": 32380,
+        "type": "SIDE_STORY"
       },
       {
-        "site": "Crunchyroll",
-        "url": "https://www.crunchyroll.com/demon-slayer-kimetsu-no-yaiba",
-        "color": "#F88B24"
+        "mal_id": 32937,
+        "type": "SEQUEL"
       },
       {
-        "site": "Bilibili TV",
-        "url": "https://www.bilibili.tv/en/media/37817/",
-        "color": "#00A1D6"
+        "mal_id": 51958,
+        "type": "SPIN_OFF"
       }
     ],
-    "url": "https://anilist.co/anime/112151"
+    "url": "https://anilist.co/anime/21202"
   },
   {
     "mal_id": 269,
@@ -2378,7 +3131,100 @@
         "color": "#241C32"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 834,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 1686,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 2889,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 4835,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 8247,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 35118,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 41467,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 762,
+        "type": "ALTERNATIVE"
+      }
+    ],
     "url": "https://anilist.co/anime/269"
+  },
+  {
+    "mal_id": 40456,
+    "title": "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train",
+    "synopsis": "This Demon Slayer movie sees Tanjiro Kamado and friends from the Demon Slayer corps board the Infinity Train on a new mission to investigate a mysterious series of disappearances, perpetrated by a demon who has been tormenting people and killing the demon slayers who oppose it.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Mystery",
+      "Supernatural"
+    ],
+    "tags": [
+      "Demons",
+      "Swordplay",
+      "Shounen",
+      "Trains",
+      "Curses",
+      "Male Protagonist",
+      "Body Horror",
+      "Super Power"
+    ],
+    "score": 84,
+    "episodes": 1,
+    "year": 2020,
+    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112151-1qlQwPB1RrJe.png",
+    "streaming": [
+      {
+        "site": "Netflix",
+        "url": "https://www.netflix.com/title/81410810",
+        "color": "#E50914"
+      },
+      {
+        "site": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/demon-slayer-kimetsu-no-yaiba",
+        "color": "#F88B24"
+      },
+      {
+        "site": "Bilibili TV",
+        "url": "https://www.bilibili.tv/en/media/37817/",
+        "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 38000,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 49926,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 47778,
+        "type": "SEQUEL"
+      }
+    ],
+    "url": "https://anilist.co/anime/112151"
   },
   {
     "mal_id": 22535,
@@ -2417,6 +3263,7 @@
         "color": "#03AEEF"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/20623"
   },
   {
@@ -2462,6 +3309,7 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/99423"
   },
   {
@@ -2511,6 +3359,24 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 2904,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 1953,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 34438,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 17277,
+        "type": "SPIN_OFF"
+      }
+    ],
     "url": "https://anilist.co/anime/1575"
   },
   {
@@ -2544,6 +3410,20 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/81033445",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 32,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 31,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 4130,
+        "type": "SPIN_OFF"
       }
     ],
     "url": "https://anilist.co/anime/30"
@@ -2589,6 +3469,12 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 40956,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/105310"
   },
   {
@@ -2632,6 +3518,7 @@
         "color": "#002BE7"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/199"
   },
   {
@@ -2689,6 +3576,24 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 40748,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 57658,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 59654,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 62392,
+        "type": "SUMMARY"
+      }
+    ],
     "url": "https://anilist.co/anime/145064"
   },
   {
@@ -2740,6 +3645,20 @@
         "site": "Hulu",
         "url": "https://www.hulu.com/series/demon-slayer-kimetsu-no-yaiba-entertainment-district-arc",
         "color": "#1CE783"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 49926,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 40456,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 51019,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/142329"
@@ -2799,6 +3718,16 @@
         "color": "#0D69C0"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 3603,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 20899,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/14719"
   },
   {
@@ -2841,6 +3770,12 @@
         "site": "Crunchyroll",
         "url": "https://www.crunchyroll.com/death-parade",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 14353,
+        "type": "ALTERNATIVE"
       }
     ],
     "url": "https://anilist.co/anime/20931"
@@ -2901,6 +3836,20 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 30276,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 39705,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 52807,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/97668"
   },
   {
@@ -2959,6 +3908,20 @@
         "color": "#E50914"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 5,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 17205,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 4037,
+        "type": "SUMMARY"
+      }
+    ],
     "url": "https://anilist.co/anime/1"
   },
   {
@@ -2991,6 +3954,24 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 10647,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 11266,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 11737,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 33506,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/9919"
   },
   {
@@ -3009,8 +3990,8 @@
       "Female Protagonist",
       "Philosophy",
       "Medieval",
-      "Episodic",
-      "Found Family"
+      "Found Family",
+      "Kuudere"
     ],
     "score": 91,
     "episodes": 28,
@@ -3046,6 +4027,16 @@
         "site": "Amazon Prime Video",
         "url": "https://www.primevideo.com/detail/0FCJEHY4FXTDVCLZ5NR9A0N42N",
         "color": "#FF9900"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 56885,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 59978,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/154587"
@@ -3090,6 +4081,12 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 40356,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/99263"
   },
   {
@@ -3120,6 +4117,16 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/80175351",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 37086,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 50339,
+        "type": "SPIN_OFF"
       }
     ],
     "url": "https://anilist.co/anime/98314"
@@ -3180,6 +4187,24 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 38793,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 41488,
+        "type": "SPIN_OFF"
+      },
+      {
+        "mal_id": 51309,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 54565,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/101280"
   },
   {
@@ -3231,6 +4256,28 @@
         "site": "Bilibili TV",
         "url": "https://www.bilibili.tv/media/35933",
         "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 20021,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 31765,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 11757,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 37278,
+        "type": "PARENT"
+      },
+      {
+        "mal_id": 36475,
+        "type": "SPIN_OFF"
       }
     ],
     "url": "https://anilist.co/anime/20594"
@@ -3293,6 +4340,20 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 32182,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 39651,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 50172,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/101338"
   },
   {
@@ -3351,55 +4412,17 @@
         "color": "#002BE7"
       }
     ],
-    "url": "https://anilist.co/anime/120120"
-  },
-  {
-    "mal_id": 6547,
-    "title": "Angel Beats!",
-    "synopsis": "Otonashi wakes up in the afterlife to find out he has no memories of his life before death. Desperate to survive in a war that could yield another unfortunate fate, he joins the SSS in the battle against Angel, whose very mission is to destroy all inhabitants of this afterlife. As Otonashi struggles to recover his memory and learn more about this world, he finds that not all is as it had seemed. (Source: Funimation)",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Supernatural"
-    ],
-    "tags": [
-      "School",
-      "Amnesia",
-      "Primarily Teen Cast",
-      "Kuudere",
-      "Coming of Age",
-      "Memory Manipulation",
-      "Boarding School",
-      "Male Protagonist"
-    ],
-    "score": 77,
-    "episodes": 13,
-    "year": 2010,
-    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx6547-SYexAn5aFyss.png",
-    "streaming": [
+    "relations": [
       {
-        "site": "Crunchyroll",
-        "url": "https://www.crunchyroll.com/angel-beats",
-        "color": "#F88B24"
+        "mal_id": 48735,
+        "type": "SPIN_OFF"
       },
       {
-        "site": "Netflix",
-        "url": "https://www.netflix.com/title/70201870",
-        "color": "#E50914"
-      },
-      {
-        "site": "Bilibili TV",
-        "url": "https://www.bilibili.tv/en/media/36812",
-        "color": "#00A1D6"
-      },
-      {
-        "site": "OceanVeil",
-        "url": "https://oceanveil.net/anime_titles/",
-        "color": "#00D0D3"
+        "mal_id": 50608,
+        "type": "SEQUEL"
       }
     ],
-    "url": "https://anilist.co/anime/6547"
+    "url": "https://anilist.co/anime/120120"
   },
   {
     "mal_id": 39535,
@@ -3457,7 +4480,71 @@
         "color": "#00CC36"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 45576,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/108465"
+  },
+  {
+    "mal_id": 6547,
+    "title": "Angel Beats!",
+    "synopsis": "Otonashi wakes up in the afterlife to find out he has no memories of his life before death. Desperate to survive in a war that could yield another unfortunate fate, he joins the SSS in the battle against Angel, whose very mission is to destroy all inhabitants of this afterlife. As Otonashi struggles to recover his memory and learn more about this world, he finds that not all is as it had seemed. (Source: Funimation)",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Supernatural"
+    ],
+    "tags": [
+      "School",
+      "Amnesia",
+      "Primarily Teen Cast",
+      "Kuudere",
+      "Coming of Age",
+      "Memory Manipulation",
+      "Boarding School",
+      "Male Protagonist"
+    ],
+    "score": 77,
+    "episodes": 13,
+    "year": 2010,
+    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx6547-SYexAn5aFyss.png",
+    "streaming": [
+      {
+        "site": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/angel-beats",
+        "color": "#F88B24"
+      },
+      {
+        "site": "Netflix",
+        "url": "https://www.netflix.com/title/70201870",
+        "color": "#E50914"
+      },
+      {
+        "site": "Bilibili TV",
+        "url": "https://www.bilibili.tv/en/media/36812",
+        "color": "#00A1D6"
+      },
+      {
+        "site": "OceanVeil",
+        "url": "https://oceanveil.net/anime_titles/",
+        "color": "#00D0D3"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 9062,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 10067,
+        "type": "SIDE_STORY"
+      }
+    ],
+    "url": "https://anilist.co/anime/6547"
   },
   {
     "mal_id": 35507,
@@ -3513,6 +4600,12 @@
         "color": "#FF0000"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 51096,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/98659"
   },
   {
@@ -3562,6 +4655,16 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 40028,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 51535,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/131681"
   },
   {
@@ -3600,91 +4703,21 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 37999,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 43608,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 43609,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/112641"
-  },
-  {
-    "mal_id": 10620,
-    "title": "The Future Diary",
-    "synopsis": "This psychological thriller, based on the manga written and illustrated by Sakae Esuno, is about Yuki, a loner who's not very good with people. He prefers to write a diary on his cell phone and talk to his imaginary friend, Deus Ex Machina – The God of Time and Space. However, Yuki soon learns that Deus is more than a figment of his imagination when he makes Yuki participate in a battle royale with eleven others. The contestants are given special diaries that can predict the future, each diary possessing unique features that give it both advantages and disadvantages. Within the next 90 days, the contestants must try to survive until there is only one left standing. The winner will become the new God of Time and Space. (Source: FUNimation)",
-    "genres": [
-      "Action",
-      "Horror",
-      "Mystery",
-      "Psychological",
-      "Supernatural",
-      "Thriller"
-    ],
-    "tags": [
-      "Battle Royale",
-      "Death Game",
-      "Survival",
-      "Yandere",
-      "Psychosexual",
-      "Body Horror",
-      "Gore",
-      "Gods"
-    ],
-    "score": 69,
-    "episodes": 26,
-    "year": 2011,
-    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx10620-dUZeNej0W4QN.png",
-    "streaming": [
-      {
-        "site": "Crunchyroll",
-        "url": "https://www.crunchyroll.com/the-future-diary",
-        "color": "#F88B24"
-      }
-    ],
-    "url": "https://anilist.co/anime/10620"
-  },
-  {
-    "mal_id": 28999,
-    "title": "Charlotte",
-    "synopsis": "The story centers around the special abilities that occur among a small percentage of boys and girls in puberty. Yuu Otosaka uses his power without others knowing, and lives a fairly normal, average school life. Before him suddenly appears a girl, Nao Tomori. Due to his meeting with her, the fate of special power-users will be exposed. (Source: Anime News Network)",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance",
-      "Sci-Fi",
-      "Supernatural"
-    ],
-    "tags": [
-      "Super Power",
-      "Urban Fantasy",
-      "Primarily Teen Cast",
-      "Male Protagonist",
-      "Urban",
-      "School Club",
-      "School",
-      "Amnesia"
-    ],
-    "score": 75,
-    "episodes": 13,
-    "year": 2015,
-    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20997-axVYrsIfjtYJ.jpg",
-    "streaming": [
-      {
-        "site": "Crunchyroll",
-        "url": "http://www.crunchyroll.com/charlotte",
-        "color": "#F88B24"
-      },
-      {
-        "site": "Hulu",
-        "url": "http://www.hulu.com/charlotte",
-        "color": "#1CE783"
-      },
-      {
-        "site": "Netflix",
-        "url": "https://www.netflix.com/title/80142917",
-        "color": "#E50914"
-      },
-      {
-        "site": "Bilibili TV",
-        "url": "https://www.bilibili.tv/en/media/35299",
-        "color": "#00A1D6"
-      }
-    ],
-    "url": "https://anilist.co/anime/20997"
   },
   {
     "mal_id": 52299,
@@ -3736,7 +4769,121 @@
         "color": "#FF9900"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 58567,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 59841,
+        "type": "SUMMARY"
+      }
+    ],
     "url": "https://anilist.co/anime/151807"
+  },
+  {
+    "mal_id": 28999,
+    "title": "Charlotte",
+    "synopsis": "The story centers around the special abilities that occur among a small percentage of boys and girls in puberty. Yuu Otosaka uses his power without others knowing, and lives a fairly normal, average school life. Before him suddenly appears a girl, Nao Tomori. Due to his meeting with her, the fate of special power-users will be exposed. (Source: Anime News Network)",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance",
+      "Sci-Fi",
+      "Supernatural"
+    ],
+    "tags": [
+      "Super Power",
+      "Urban Fantasy",
+      "Primarily Teen Cast",
+      "Male Protagonist",
+      "Urban",
+      "School Club",
+      "School",
+      "Amnesia"
+    ],
+    "score": 75,
+    "episodes": 13,
+    "year": 2015,
+    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20997-axVYrsIfjtYJ.jpg",
+    "streaming": [
+      {
+        "site": "Crunchyroll",
+        "url": "http://www.crunchyroll.com/charlotte",
+        "color": "#F88B24"
+      },
+      {
+        "site": "Hulu",
+        "url": "http://www.hulu.com/charlotte",
+        "color": "#1CE783"
+      },
+      {
+        "site": "Netflix",
+        "url": "https://www.netflix.com/title/80142917",
+        "color": "#E50914"
+      },
+      {
+        "site": "Bilibili TV",
+        "url": "https://www.bilibili.tv/en/media/35299",
+        "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 31553,
+        "type": "SIDE_STORY"
+      }
+    ],
+    "url": "https://anilist.co/anime/20997"
+  },
+  {
+    "mal_id": 10620,
+    "title": "The Future Diary",
+    "synopsis": "This psychological thriller, based on the manga written and illustrated by Sakae Esuno, is about Yuki, a loner who's not very good with people. He prefers to write a diary on his cell phone and talk to his imaginary friend, Deus Ex Machina – The God of Time and Space. However, Yuki soon learns that Deus is more than a figment of his imagination when he makes Yuki participate in a battle royale with eleven others. The contestants are given special diaries that can predict the future, each diary possessing unique features that give it both advantages and disadvantages. Within the next 90 days, the contestants must try to survive until there is only one left standing. The winner will become the new God of Time and Space. (Source: FUNimation)",
+    "genres": [
+      "Action",
+      "Horror",
+      "Mystery",
+      "Psychological",
+      "Supernatural",
+      "Thriller"
+    ],
+    "tags": [
+      "Battle Royale",
+      "Death Game",
+      "Survival",
+      "Yandere",
+      "Psychosexual",
+      "Body Horror",
+      "Gore",
+      "Gods"
+    ],
+    "score": 69,
+    "episodes": 26,
+    "year": 2011,
+    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx10620-dUZeNej0W4QN.png",
+    "streaming": [
+      {
+        "site": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/the-future-diary",
+        "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 16762,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 12503,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 8460,
+        "type": "ALTERNATIVE"
+      }
+    ],
+    "url": "https://anilist.co/anime/10620"
   },
   {
     "mal_id": 48561,
@@ -3777,6 +4924,12 @@
         "color": "#E50914"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 40748,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/131573"
   },
   {
@@ -3813,6 +4966,16 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/80132126",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 32867,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 42250,
+        "type": "SPIN_OFF"
       }
     ],
     "url": "https://anilist.co/anime/21311"
@@ -3858,6 +5021,12 @@
         "color": "#E50914"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 53065,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/132405"
   },
   {
@@ -3898,6 +5067,12 @@
         "site": "Crunchyroll",
         "url": "https://www.crunchyroll.com/kill-la-kill",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 21659,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/18679"
@@ -3953,6 +5128,28 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 38408,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 44200,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 49918,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 51781,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 56685,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/117193"
   },
   {
@@ -4001,6 +5198,16 @@
         "site": "Crunchyroll",
         "url": "https://crunchyroll.com/tokyo-ghoul",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 36511,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 22319,
+        "type": "PREQUEL"
       }
     ],
     "url": "https://anilist.co/anime/20850"
@@ -4057,6 +5264,16 @@
         "site": "YouTube",
         "url": "https://youtube.com/playlist?list=PLxSscENEp7JiQ5eGN9KP8g6v8fEG7k6Ab",
         "color": "#FF0000"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 32282,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 31327,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/20923"
@@ -4119,6 +5336,20 @@
         "color": "#03AEEF"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 36862,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 37514,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 37515,
+        "type": "SUMMARY"
+      }
+    ],
     "url": "https://anilist.co/anime/97986"
   },
   {
@@ -4174,6 +5405,32 @@
         "site": "Tubi TV",
         "url": "https://tubitv.com/series/2234/overlord",
         "color": "#7408FF"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 33372,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 35073,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 34161,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 34428,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 31138,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 51168,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/20832"
@@ -4233,6 +5490,28 @@
         "color": "#00CC36"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 32935,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 35110,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 35321,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 35806,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 20583,
+        "type": "PREQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/20992"
   },
   {
@@ -4281,6 +5560,12 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 48413,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/15809"
   },
   {
@@ -4317,6 +5602,16 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/browse?jbv=80075178&jbp=0&jbr=11",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 38963,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 15039,
+        "type": "ALTERNATIVE"
       }
     ],
     "url": "https://anilist.co/anime/9989"
@@ -4368,6 +5663,24 @@
         "color": "#E50914"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 37347,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 32801,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 37348,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 32887,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/20920"
   },
   {
@@ -4407,6 +5720,16 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 21507,
+        "type": "SPIN_OFF"
+      },
+      {
+        "mal_id": 21195,
+        "type": "SPIN_OFF"
+      }
+    ],
     "url": "https://anilist.co/anime/3588"
   },
   {
@@ -4444,6 +5767,16 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/80241072",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 11701,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 20365,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/11111"
@@ -4489,6 +5822,20 @@
         "color": "#FF9900"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 9982,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 12049,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 22043,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/6702"
   },
   {
@@ -4532,6 +5879,16 @@
         "color": "#00CC36"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 18753,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 23847,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/14813"
   },
   {
@@ -4570,6 +5927,28 @@
         "site": "Hulu",
         "url": "http://www.hulu.com/gurren-lagann",
         "color": "#1CE783"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 10622,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 4107,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 4565,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 4705,
+        "type": "SPIN_OFF"
+      },
+      {
+        "mal_id": 8348,
+        "type": "SPIN_OFF"
       }
     ],
     "url": "https://anilist.co/anime/2001"
@@ -4613,6 +5992,20 @@
         "site": "YouTube",
         "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjBrlCcD2AFans0YqvZCF0f",
         "color": "#FF0000"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 30831,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 34626,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 38040,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/21699"
@@ -4670,6 +6063,20 @@
         "color": "#FF0000"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 31240,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 42203,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 42364,
+        "type": "SPIN_OFF"
+      }
+    ],
     "url": "https://anilist.co/anime/108632"
   },
   {
@@ -4716,6 +6123,12 @@
         "site": "YouTube",
         "url": "https://youtube.com/playlist?list=PLxSscENEp7JhK-cSte9aHaz3rs6qc2Eup&si=lgTTA5pL7lelUyrR",
         "color": "#FF0000"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 5760,
+        "type": "ALTERNATIVE"
       }
     ],
     "url": "https://anilist.co/anime/101347"
@@ -4778,7 +6191,46 @@
         "color": "#252525"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 60543,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/171018"
+  },
+  {
+    "mal_id": 36098,
+    "title": "I Want to Eat Your Pancreas",
+    "synopsis": "Spring time in April and the last of the cherry blossoms are still in bloom. The usually aloof bookworm with no interest in others comes across a book in a hospital waiting room. Handwritten on the cover are the words: \"Living with Dying.\" He soon discovers that it is a diary kept by his very popular and genuinely cheerful classmate, Sakura Yamauchi, who reveals to him that she is secretly suffering from a pancreatic illness and only has a limited time left. It is at this moment that she gains just one more person to share her secret. Trying to maintain a normal life as much as possible, Sakura is determined to live her life to the fullest until the very last day. As her free spirit and unpredictable actions throw him for a loop, his heart begins to gradually change. (Source: Aniplex USA)",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Slice of Life"
+    ],
+    "tags": [
+      "Coming of Age",
+      "Male Protagonist",
+      "Philosophy",
+      "Female Protagonist",
+      "Heterosexual",
+      "Primarily Teen Cast",
+      "Classic Literature",
+      "Rehabilitation"
+    ],
+    "score": 84,
+    "episodes": 1,
+    "year": 2018,
+    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99750-pNyly9d3MEgV.jpg",
+    "streaming": [
+      {
+        "site": "Netflix",
+        "url": "https://www.netflix.com/title/81037593",
+        "color": "#E50914"
+      }
+    ],
+    "relations": [],
+    "url": "https://anilist.co/anime/99750"
   },
   {
     "mal_id": 30654,
@@ -4826,39 +6278,25 @@
         "color": "#FF0000"
       }
     ],
-    "url": "https://anilist.co/anime/21170"
-  },
-  {
-    "mal_id": 36098,
-    "title": "I Want to Eat Your Pancreas",
-    "synopsis": "Spring time in April and the last of the cherry blossoms are still in bloom. The usually aloof bookworm with no interest in others comes across a book in a hospital waiting room. Handwritten on the cover are the words: \"Living with Dying.\" He soon discovers that it is a diary kept by his very popular and genuinely cheerful classmate, Sakura Yamauchi, who reveals to him that she is secretly suffering from a pancreatic illness and only has a limited time left. It is at this moment that she gains just one more person to share her secret. Trying to maintain a normal life as much as possible, Sakura is determined to live her life to the fullest until the very last day. As her free spirit and unpredictable actions throw him for a loop, his heart begins to gradually change. (Source: Aniplex USA)",
-    "genres": [
-      "Drama",
-      "Romance",
-      "Slice of Life"
-    ],
-    "tags": [
-      "Coming of Age",
-      "Male Protagonist",
-      "Philosophy",
-      "Female Protagonist",
-      "Heterosexual",
-      "Primarily Teen Cast",
-      "Classic Literature",
-      "Rehabilitation"
-    ],
-    "score": 84,
-    "episodes": 1,
-    "year": 2018,
-    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99750-pNyly9d3MEgV.jpg",
-    "streaming": [
+    "relations": [
       {
-        "site": "Netflix",
-        "url": "https://www.netflix.com/title/81037593",
-        "color": "#E50914"
+        "mal_id": 24833,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 32863,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 33513,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 34389,
+        "type": "SPIN_OFF"
       }
     ],
-    "url": "https://anilist.co/anime/99750"
+    "url": "https://anilist.co/anime/21170"
   },
   {
     "mal_id": 42310,
@@ -4889,6 +6327,12 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/81054853",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 61990,
+        "type": "ALTERNATIVE"
       }
     ],
     "url": "https://anilist.co/anime/120377"
@@ -4945,6 +6389,16 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 47778,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 55701,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/145139"
   },
   {
@@ -4992,6 +6446,24 @@
         "color": "#FF0000"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 28891,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 35111,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 35321,
+        "type": "SUMMARY"
+      },
+      {
+        "mal_id": 40262,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/21698"
   },
   {
@@ -5035,6 +6507,7 @@
         "color": "#002BE7"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/431"
   },
   {
@@ -5077,6 +6550,32 @@
         "site": "Crunchyroll",
         "url": "https://www.crunchyroll.com/code-geass",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 1575,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 5163,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 8728,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 9591,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 40334,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 33156,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/2904"
@@ -5125,6 +6624,12 @@
         "site": "Crunchyroll",
         "url": "https://www.crunchyroll.com/psycho-pass",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 23281,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/13601"
@@ -5182,6 +6687,20 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 38000,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 40456,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 47778,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/129874"
   },
   {
@@ -5217,6 +6736,16 @@
         "site": "Tubi TV",
         "url": "https://tubitv.com/series/2229/the_disastrous_life_of_saiki_k",
         "color": "#7408FF"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 34612,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 19469,
+        "type": "ALTERNATIVE"
       }
     ],
     "url": "https://anilist.co/anime/21804"
@@ -5267,6 +6796,7 @@
         "color": "#002BE7"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/106286"
   },
   {
@@ -5308,6 +6838,12 @@
         "site": "Hulu",
         "url": "https://www.hulu.com/series/hells-paradise-ed1bbbfa-fb32-4b9a-83b8-04a42687ae59",
         "color": "#1CE783"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 55825,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/128893"
@@ -5352,6 +6888,12 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 13469,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/12189"
   },
   {
@@ -5384,6 +6926,16 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/mx/title/80174974",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 2252,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 2354,
+        "type": "ALTERNATIVE"
       }
     ],
     "url": "https://anilist.co/anime/98460"
@@ -5427,6 +6979,24 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/80239860",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 16934,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 15687,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 15879,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 19021,
+        "type": "SUMMARY"
       }
     ],
     "url": "https://anilist.co/anime/14741"
@@ -5480,6 +7050,16 @@
         "site": "Bilibili TV",
         "url": "https://www.bilibili.tv/en/media/35414",
         "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 11741,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 13263,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/10087"
@@ -5539,6 +7119,24 @@
         "color": "#0D69C0"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 666,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 14719,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 665,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 26055,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/20474"
   },
   {
@@ -5577,6 +7175,24 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/80060347",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 15689,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 11597,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 32268,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 51068,
+        "type": "ALTERNATIVE"
       }
     ],
     "url": "https://anilist.co/anime/5081"
@@ -5623,6 +7239,7 @@
         "color": "#FF9900"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/19"
   },
   {
@@ -5670,6 +7287,12 @@
         "site": "Hulu",
         "url": "https://www.hulu.com/series/tower-of-god-b2623f96-4b19-4b95-9dc4-443f4bfc2fa0",
         "color": "#1CE783"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 52635,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/115230"
@@ -5730,6 +7353,16 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 38691,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 50612,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/113936"
   },
   {
@@ -5782,6 +7415,16 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 35145,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 35363,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/21776"
   },
   {
@@ -5814,6 +7457,20 @@
         "site": "Hulu",
         "url": "http://www.hulu.com/seraph-of-the-end-vampire-reign",
         "color": "#1CE783"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 30714,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 31378,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 28927,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/20829"
@@ -5874,6 +7531,16 @@
         "color": "#00CC36"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 50265,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 53887,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/142838"
   },
   {
@@ -5909,6 +7576,12 @@
         "site": "Bilibili TV",
         "url": "https://www.bilibili.tv/en/play/36621",
         "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 38349,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/99578"
@@ -5964,6 +7637,24 @@
         "site": "Bilibili TV",
         "url": "https://www.bilibili.tv/en/media/36816",
         "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 11981,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 11977,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 11979,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 38256,
+        "type": "ALTERNATIVE"
       }
     ],
     "url": "https://anilist.co/anime/9756"
@@ -6024,6 +7715,12 @@
         "color": "#E50914"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 55791,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/150672"
   },
   {
@@ -6080,39 +7777,13 @@
         "color": "#F88B24"
       }
     ],
-    "url": "https://anilist.co/anime/108725"
-  },
-  {
-    "mal_id": 48926,
-    "title": "Komi Can’t Communicate",
-    "synopsis": "Timid Tadano is a total wallflower, and that’s just the way he likes it. But all that changes when he finds himself alone in a classroom on the first day of high school with the legendary Komi. He quickly realizes she isn’t aloof—she’s just super awkward. Now he’s made it his mission to help her on her quest to make 100 friends! (Source: VIZ Media)",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Slice of Life"
-    ],
-    "tags": [
-      "School",
-      "Kuudere",
-      "Disability",
-      "Female Protagonist",
-      "Episodic",
-      "Slapstick",
-      "Primarily Teen Cast",
-      "Male Protagonist"
-    ],
-    "score": 76,
-    "episodes": 12,
-    "year": 2021,
-    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx133965-9TZBS4m4yvED.png",
-    "streaming": [
+    "relations": [
       {
-        "site": "Netflix",
-        "url": "https://www.netflix.com/title/81228573",
-        "color": "#E50914"
+        "mal_id": 37779,
+        "type": "PREQUEL"
       }
     ],
-    "url": "https://anilist.co/anime/133965"
+    "url": "https://anilist.co/anime/108725"
   },
   {
     "mal_id": 49596,
@@ -6164,7 +7835,167 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 54865,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 54866,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/137822"
+  },
+  {
+    "mal_id": 48926,
+    "title": "Komi Can’t Communicate",
+    "synopsis": "Timid Tadano is a total wallflower, and that’s just the way he likes it. But all that changes when he finds himself alone in a classroom on the first day of high school with the legendary Komi. He quickly realizes she isn’t aloof—she’s just super awkward. Now he’s made it his mission to help her on her quest to make 100 friends! (Source: VIZ Media)",
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Slice of Life"
+    ],
+    "tags": [
+      "School",
+      "Kuudere",
+      "Disability",
+      "Female Protagonist",
+      "Episodic",
+      "Slapstick",
+      "Primarily Teen Cast",
+      "Male Protagonist"
+    ],
+    "score": 76,
+    "episodes": 12,
+    "year": 2021,
+    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx133965-9TZBS4m4yvED.png",
+    "streaming": [
+      {
+        "site": "Netflix",
+        "url": "https://www.netflix.com/title/81228573",
+        "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 50631,
+        "type": "SEQUEL"
+      }
+    ],
+    "url": "https://anilist.co/anime/133965"
+  },
+  {
+    "mal_id": 39551,
+    "title": "That Time I Got Reincarnated as a Slime Season 2",
+    "synopsis": "The second season of Tensei Shitara Slime Datta Ken . Now that the Jura Tempest Alliance is growing even further, they will now be meeting the animal kingdom of Eurazania, reuniting with King Gazel, rising tensions between monsters and humans, and Rimuru encountering the strongest enemy he’s ever faced. (Source: Funimation)",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "tags": [
+      "Kingdom Management",
+      "Isekai",
+      "Magic",
+      "War",
+      "Creature Taming",
+      "Demons",
+      "Politics",
+      "Ensemble Cast"
+    ],
+    "score": 83,
+    "episodes": 12,
+    "year": 2021,
+    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108511-PufFordLNyIb.jpg",
+    "streaming": [
+      {
+        "site": "Crunchyroll",
+        "url": "https://www.crunchyroll.com/that-time-i-got-reincarnated-as-a-slime",
+        "color": "#F88B24"
+      },
+      {
+        "site": "YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl24o1N6adcgGPyIJPfJ21GL",
+        "color": "#FF0000"
+      },
+      {
+        "site": "iQ",
+        "url": "https://www.iq.com/album/wawhhl0y5p",
+        "color": "#00CC36"
+      },
+      {
+        "site": "Netflix",
+        "url": "https://www.netflix.com/title/81028712",
+        "color": "#E50914"
+      },
+      {
+        "site": "Bilibili",
+        "url": "https://www.bilibili.com/bangumi/media/md28231812",
+        "color": "#00A1D6"
+      },
+      {
+        "site": "Bilibili TV",
+        "url": "https://www.bilibili.tv/media/36689",
+        "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 41487,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 54565,
+        "type": "PREQUEL"
+      }
+    ],
+    "url": "https://anilist.co/anime/108511"
+  },
+  {
+    "mal_id": 41457,
+    "title": "86 EIGHTY-SIX",
+    "synopsis": "Called “Juggernaut,” these are the unmanned combat drones developed by the Republic of San Magnolia in answer to the attacks by the autonomous unmanned drones of the neighboring Empire of Giad, the “Legion”. But they’re only unmanned in name. In reality, they are piloted by the Eighty-sixers—those considered to be less than human and treated as mere tools. Determined to achieve his own mysterious ends, Shin, the captain of Spearhead Squadron, which is comprised of Eighty-sixers, continues to fight a hopeless war on a battlefield where only death awaits him. (Source: Crunchyroll)",
+    "genres": [
+      "Action",
+      "Drama",
+      "Mecha",
+      "Sci-Fi"
+    ],
+    "tags": [
+      "Class Struggle",
+      "War",
+      "Military",
+      "Dystopian",
+      "Survival",
+      "Ensemble Cast",
+      "Seinen",
+      "Politics"
+    ],
+    "score": 83,
+    "episodes": 11,
+    "year": 2021,
+    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx116589-KawXHB6sApFt.jpg",
+    "streaming": [
+      {
+        "site": "iQ",
+        "url": "https://www.iq.com/album/2aef2fzzzvp",
+        "color": "#00CC36"
+      },
+      {
+        "site": "Netflix",
+        "url": "https://www.netflix.com/title/81442047",
+        "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 48569,
+        "type": "SEQUEL"
+      }
+    ],
+    "url": "https://anilist.co/anime/116589"
   },
   {
     "mal_id": 41025,
@@ -6223,103 +8054,13 @@
         "color": "#002BE7"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 49709,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/114535"
-  },
-  {
-    "mal_id": 41457,
-    "title": "86 EIGHTY-SIX",
-    "synopsis": "Called “Juggernaut,” these are the unmanned combat drones developed by the Republic of San Magnolia in answer to the attacks by the autonomous unmanned drones of the neighboring Empire of Giad, the “Legion”. But they’re only unmanned in name. In reality, they are piloted by the Eighty-sixers—those considered to be less than human and treated as mere tools. Determined to achieve his own mysterious ends, Shin, the captain of Spearhead Squadron, which is comprised of Eighty-sixers, continues to fight a hopeless war on a battlefield where only death awaits him. (Source: Crunchyroll)",
-    "genres": [
-      "Action",
-      "Drama",
-      "Mecha",
-      "Sci-Fi"
-    ],
-    "tags": [
-      "Class Struggle",
-      "War",
-      "Military",
-      "Dystopian",
-      "Survival",
-      "Ensemble Cast",
-      "Seinen",
-      "Politics"
-    ],
-    "score": 83,
-    "episodes": 11,
-    "year": 2021,
-    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx116589-KawXHB6sApFt.jpg",
-    "streaming": [
-      {
-        "site": "iQ",
-        "url": "https://www.iq.com/album/2aef2fzzzvp",
-        "color": "#00CC36"
-      },
-      {
-        "site": "Netflix",
-        "url": "https://www.netflix.com/title/81442047",
-        "color": "#E50914"
-      }
-    ],
-    "url": "https://anilist.co/anime/116589"
-  },
-  {
-    "mal_id": 39551,
-    "title": "That Time I Got Reincarnated as a Slime Season 2",
-    "synopsis": "The second season of Tensei Shitara Slime Datta Ken . Now that the Jura Tempest Alliance is growing even further, they will now be meeting the animal kingdom of Eurazania, reuniting with King Gazel, rising tensions between monsters and humans, and Rimuru encountering the strongest enemy he’s ever faced. (Source: Funimation)",
-    "genres": [
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Fantasy"
-    ],
-    "tags": [
-      "Kingdom Management",
-      "Isekai",
-      "Magic",
-      "War",
-      "Creature Taming",
-      "Demons",
-      "Politics",
-      "Ensemble Cast"
-    ],
-    "score": 83,
-    "episodes": 12,
-    "year": 2021,
-    "cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108511-PufFordLNyIb.jpg",
-    "streaming": [
-      {
-        "site": "Crunchyroll",
-        "url": "https://www.crunchyroll.com/that-time-i-got-reincarnated-as-a-slime",
-        "color": "#F88B24"
-      },
-      {
-        "site": "YouTube",
-        "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl24o1N6adcgGPyIJPfJ21GL",
-        "color": "#FF0000"
-      },
-      {
-        "site": "iQ",
-        "url": "https://www.iq.com/album/wawhhl0y5p",
-        "color": "#00CC36"
-      },
-      {
-        "site": "Netflix",
-        "url": "https://www.netflix.com/title/81028712",
-        "color": "#E50914"
-      },
-      {
-        "site": "Bilibili",
-        "url": "https://www.bilibili.com/bangumi/media/md28231812",
-        "color": "#00A1D6"
-      },
-      {
-        "site": "Bilibili TV",
-        "url": "https://www.bilibili.tv/media/36689",
-        "color": "#00A1D6"
-      }
-    ],
-    "url": "https://anilist.co/anime/108511"
   },
   {
     "mal_id": 38101,
@@ -6355,6 +8096,16 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/browse?jbv=81152346",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 39783,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 64105,
+        "type": "SIDE_STORY"
       }
     ],
     "url": "https://anilist.co/anime/103572"
@@ -6416,6 +8167,20 @@
         "color": "#0D69C0"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 26055,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 37991,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 33191,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/21450"
   },
   {
@@ -6474,6 +8239,20 @@
         "color": "#E50914"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 39535,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 50360,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 51179,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/127720"
   },
   {
@@ -6522,6 +8301,16 @@
         "color": "#F88B24"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 20507,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 30885,
+        "type": "SIDE_STORY"
+      }
+    ],
     "url": "https://anilist.co/anime/21128"
   },
   {
@@ -6559,6 +8348,20 @@
         "site": "Netflix",
         "url": "https://www.netflix.com/title/80005873",
         "color": "#E50914"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 13357,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 12729,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 15451,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/11617"
@@ -6615,6 +8418,16 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 120,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 40417,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/105334"
   },
   {
@@ -6648,6 +8461,7 @@
         "color": "#FF9900"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/100388"
   },
   {
@@ -6687,6 +8501,16 @@
         "site": "Hulu",
         "url": "https://www.hulu.com/series/the-apothecary-diaries-d7b5390e-b8cb-4cc3-ba7c-7ed570355d7d",
         "color": "#1CE783"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 56975,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 58514,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/161645"
@@ -6736,6 +8560,12 @@
         "color": "#E50914"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 42963,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/113813"
   },
   {
@@ -6783,6 +8613,16 @@
         "site": "Crunchyroll",
         "url": "https://crunchyroll.com/tokyo-ghoul",
         "color": "#F88B24"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 27899,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 37799,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/100240"
@@ -6837,6 +8677,16 @@
         "color": "#E50914"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 53406,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 54595,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/130298"
   },
   {
@@ -6882,6 +8732,12 @@
         "site": "YouTube",
         "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0yarBY8H1zXi3Oz834aRhm",
         "color": "#FF0000"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 39576,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/101165"
@@ -6930,6 +8786,16 @@
         "color": "#FF0000"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 39587,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 54857,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/119661"
   },
   {
@@ -6973,6 +8839,7 @@
         "color": "#002BE7"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/164"
   },
   {
@@ -7021,6 +8888,16 @@
         "color": "#1CE783"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 38671,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 51818,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/114236"
   },
   {
@@ -7067,6 +8944,7 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [],
     "url": "https://anilist.co/anime/116006"
   },
   {
@@ -7126,6 +9004,16 @@
         "color": "#0D69C0"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 31933,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 48661,
+        "type": "SEQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/102883"
   },
   {
@@ -7163,6 +9051,24 @@
         "site": "Amazon Prime Video",
         "url": "https://www.amazon.com/Clannad/dp/B005IGW5Y0?tag=techblast0f-20",
         "color": "#FF9900"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 4181,
+        "type": "SEQUEL"
+      },
+      {
+        "mal_id": 1723,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 4059,
+        "type": "ALTERNATIVE"
+      },
+      {
+        "mal_id": 6351,
+        "type": "ALTERNATIVE"
       }
     ],
     "url": "https://anilist.co/anime/2167"
@@ -7207,6 +9113,16 @@
         "color": "#00A1D6"
       }
     ],
+    "relations": [
+      {
+        "mal_id": 52299,
+        "type": "PREQUEL"
+      },
+      {
+        "mal_id": 59841,
+        "type": "PREQUEL"
+      }
+    ],
     "url": "https://anilist.co/anime/176496"
   },
   {
@@ -7247,6 +9163,16 @@
         "site": "Bilibili TV",
         "url": "https://www.bilibili.tv/en/media/36981",
         "color": "#00A1D6"
+      }
+    ],
+    "relations": [
+      {
+        "mal_id": 8408,
+        "type": "SIDE_STORY"
+      },
+      {
+        "mal_id": 23199,
+        "type": "SEQUEL"
       }
     ],
     "url": "https://anilist.co/anime/6746"

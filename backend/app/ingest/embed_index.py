@@ -1,10 +1,13 @@
 """Embed chunks with Voyage and upsert them into the persistent Chroma collection.
 
 Usage:
-    python -m app.ingest.embed_index
+    python -m app.ingest.embed_index           # incremental: only embed new chunk ids
+    python -m app.ingest.embed_index --force    # re-embed everything
 
-Re-runnable: upsert is idempotent on chunk id.
+Incremental by default: existing chunk ids are skipped, so growing the corpus
+(bump `anilist --target`, re-run this) only spends Voyage tokens on new titles.
 """
+import argparse
 import json
 import sys
 
@@ -25,7 +28,18 @@ def embed_documents(texts: list[str]) -> list[list[float]]:
     return vectors
 
 
+def _existing_ids(collection) -> set[str]:
+    try:
+        return set(collection.get(include=[])["ids"])
+    except Exception:
+        return set()
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--force", action="store_true", help="re-embed all chunks")
+    args = parser.parse_args()
+
     if not config.ANIME_JSON.exists():
         sys.exit("data/anime.json not found. Run: python -m app.ingest.anilist")
 
@@ -34,15 +48,22 @@ def main() -> None:
     if not chunks:
         sys.exit("No chunks built from anime.json.")
 
-    print(f"Embedding {len(chunks)} chunks with {config.EMBED_MODEL} ...")
-    vectors = embed_documents([c["text"] for c in chunks])
-
     collection = chroma_collection()
+    have = set() if args.force else _existing_ids(collection)
+    todo = [c for c in chunks if c["id"] not in have]
+    print(f"{len(chunks)} chunks total; {len(have)} already indexed; {len(todo)} to embed.")
+    if not todo:
+        print("Nothing new to embed.")
+        return
+
+    print(f"Embedding {len(todo)} chunks with {config.EMBED_MODEL} ...")
+    vectors = embed_documents([c["text"] for c in todo])
+
     collection.upsert(
-        ids=[c["id"] for c in chunks],
+        ids=[c["id"] for c in todo],
         embeddings=vectors,
-        documents=[c["text"] for c in chunks],
-        metadatas=[c["metadata"] for c in chunks],
+        documents=[c["text"] for c in todo],
+        metadatas=[c["metadata"] for c in todo],
     )
     print(f"Indexed {collection.count()} chunks in Chroma collection '{config.COLLECTION}'.")
 

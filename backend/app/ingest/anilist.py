@@ -34,6 +34,7 @@ query ($page: Int, $perPage: Int) {
       coverImage { large medium }
       externalLinks { site url type color }
       tags { name rank isGeneralSpoiler }
+      relations { edges { relationType node { idMal type } } }
       siteUrl
     }
   }
@@ -41,6 +42,14 @@ query ($page: Int, $perPage: Int) {
 """
 
 _TAG_RE = re.compile(r"<[^>]+>")
+
+# Relations that put two shows in the SAME franchise — used downstream to avoid
+# recommending a named show's own sequels/seasons. ADAPTATION/SOURCE/CHARACTER
+# (manga, light novels, shared voice actors) are intentionally excluded.
+FRANCHISE_RELATIONS = {
+    "SEQUEL", "PREQUEL", "SIDE_STORY", "PARENT",
+    "ALTERNATIVE", "SPIN_OFF", "SUMMARY", "FULL_STORY",
+}
 
 
 def clean_text(text: str | None) -> str:
@@ -71,6 +80,14 @@ def normalize(media: dict) -> dict:
         if link.get("type") == "STREAMING" and link.get("site") and link.get("url")
     ][:6]
     year = media.get("seasonYear") or (media.get("startDate") or {}).get("year") or 0
+    relations = [
+        {"mal_id": edge["node"]["idMal"], "type": edge["relationType"]}
+        for edge in ((media.get("relations") or {}).get("edges") or [])
+        if edge.get("relationType") in FRANCHISE_RELATIONS
+        and edge.get("node")
+        and edge["node"].get("type") == "ANIME"
+        and edge["node"].get("idMal")
+    ]
     return {
         "mal_id": media.get("idMal") or 0,
         "title": pick_title(media.get("title") or {}),
@@ -82,6 +99,7 @@ def normalize(media: dict) -> dict:
         "year": year,
         "cover_image": cover.get("large") or cover.get("medium") or "",
         "streaming": streaming,
+        "relations": relations,
         "url": media.get("siteUrl") or "",
     }
 

@@ -71,7 +71,7 @@ Free Render instances sleep after ~15 min idle (first wake ~30–60s). Mitigatio
 
 To keep it always warm, do **one** of:
 - **UptimeRobot** (recommended) — free monitor hitting `https://<backend>.onrender.com/health` every 5 min.
-- **GitHub Actions** — edit `.github/workflows/keepalive.yml`, replace `REPLACE-ME` with your backend URL, commit. (Pings every ~12 min.)
+- **GitHub Actions** — `.github/workflows/keepalive.yml` pings every ~12 min. Set your URL **without editing the file**: repo → Settings → Secrets and variables → Actions → **Variables** → New variable, name `BACKEND_URL`, value `https://<your>.onrender.com`. (Falls back to the `render.yaml` service name `anime-rag-backend` if unset.) The job retries through cold-start 502s, so it wakes a sleeping instance instead of failing.
 
 ## 8. Final smoke test
 Open the Vercel URL → run a query → confirm cited cards render. Save one, refresh
