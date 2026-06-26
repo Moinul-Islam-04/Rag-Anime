@@ -94,17 +94,30 @@ def _index() -> dict:
 
     url_to_fr: dict[str, str] = {}
     alias_fr: list[tuple[str, str]] = []
+    fr_rep: dict[str, str] = {}  # franchise -> flagship url (first in popularity order)
     for show in shows:
         fr = find(_node_key(show))
-        if show.get("url"):
-            url_to_fr[show["url"]] = fr
+        url = show.get("url")
+        if url:
+            url_to_fr[url] = fr
+            # anime.json is popularity-desc, so the first url seen for a franchise
+            # is its flagship entry (e.g. "Attack on Titan", not "... Season 3").
+            fr_rep.setdefault(fr, url)
         for alias in _aliases(show.get("title", "")):
             alias_fr.append((alias, fr))
-    return {"url_to_fr": url_to_fr, "alias_fr": alias_fr}
+    return {"url_to_fr": url_to_fr, "alias_fr": alias_fr, "fr_rep": fr_rep}
 
 
 def franchise_of(url: str) -> str | None:
     return _index()["url_to_fr"].get(url)
+
+
+def representative_of(url: str) -> str:
+    """The flagship in-corpus entry of this url's franchise (the popular base
+    title, not a specific season). Falls back to the url itself if unknown."""
+    idx = _index()
+    fr = idx["url_to_fr"].get(url)
+    return idx["fr_rep"].get(fr, url) if fr is not None else url
 
 
 def referenced_franchises(query: str) -> set[str]:

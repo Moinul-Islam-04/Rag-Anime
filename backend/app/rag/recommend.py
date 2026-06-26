@@ -12,9 +12,11 @@ import json
 
 from app import config
 from app.franchise import franchise_of, referenced_franchises
+from app.ingest.chunk import build_chunk
 from app.meta import get_meta
 from app.models import Rec, RecommendResponse, Source, Stream
 from app.rag.retrieve import retrieve
+from app.recommend_graph import injected_rec_urls
 from app.services import anthropic_client
 from app.store.feedback import vote_context
 
@@ -108,6 +110,31 @@ def _preference_note(liked: list[str], disliked: list[str]) -> str:
     return note
 
 
+def _candidate_from_url(url: str) -> dict | None:
+    """Build a synthetic retrieval candidate for an injected community rec, using
+    the show's anime.json record. Shaped like a `retrieve()` Candidate so it flows
+    through the franchise collapse, citation map, and enrichment unchanged."""
+    show = get_meta(url)
+    if not show:
+        return None  # recommended title isn't in our corpus
+    chunk = build_chunk(show)
+    return {"text": chunk["text"], "metadata": chunk["metadata"], "rerank_score": 1.0}
+
+
+def _merged_candidate(url: str, rerank_score: float) -> dict | None:
+    """One prompt candidate per show: synopsis + top review summaries, rebuilt from
+    anime.json so Claude sees plot AND viewer sentiment whichever chunk retrieved."""
+    show = get_meta(url)
+    if not show:
+        return None
+    chunk = build_chunk(show)
+    text = chunk["text"]
+    reviews = (show.get("reviews") or [])[: config.REVIEW_CHUNKS_PER_SHOW]
+    if reviews:
+        text += "\n\nWhat viewers say:\n" + "\n".join(f"- {r['summary']}" for r in reviews)
+    return {"text": text, "metadata": chunk["metadata"], "rerank_score": rerank_score}
+
+
 def _call_claude(query: str, candidates: list[dict], pref_note: str = "") -> dict:
     user_msg = (
         f"User request: {query}\n{pref_note}\n\n"
@@ -146,21 +173,51 @@ def recommend(query: str, user_id: str = "anon") -> RecommendResponse:
             message="Every match was a title you down-voted. Try a different query.",
         )
 
-    # No-sequel filtering: don't hand back a show the user named (or its other
-    # seasons), and collapse multiple entries of the same franchise to one rec
-    # (so "like AOT" can't surface AOT S1 *and* AOT Final Season).
     banned_franchises = referenced_franchises(query)
+
+    # Phase A — community graph: when the user NAMES a show, seed the pool with
+    # its top AniList community "if you liked X, watch Y" recs (in-corpus, vote-
+    # weighted, same-franchise already excluded). Front-inserted with a max score
+    # so they win the per-franchise collapse below; deduped against retrieval.
+    have_urls = {c["metadata"]["source_url"] for c in candidates}
+    injected: list[dict] = []
+    for url in injected_rec_urls(query, banned_franchises, config.COMMUNITY_INJECT_MAX):
+        if url in have_urls:
+            continue
+        cand = _candidate_from_url(url)
+        if cand:
+            injected.append(cand)
+            have_urls.add(url)
+    candidates = injected + candidates
+
+    # Collapse chunks -> shows. A show can now contribute a synopsis chunk AND
+    # several review chunks; group by url, keeping each show's best rerank score
+    # and the reranker's first-seen ordering (injected community recs lead).
+    show_score: dict[str, float] = {}
+    order: list[str] = []
+    for c in candidates:
+        url = c["metadata"]["source_url"]
+        score = c.get("rerank_score") or 0.0
+        if url not in show_score:
+            show_score[url] = score
+            order.append(url)
+        else:
+            show_score[url] = max(show_score[url], score)
+
+    # No-sequel filtering: drop a franchise the user named (or its other seasons),
+    # keep one entry per franchise, and cap the distinct shows sent to Claude.
     seen_franchises: set[str] = set()
-    deduped: list[dict] = []
-    for c in candidates:  # already ordered best-first by the reranker
-        fr = franchise_of(c["metadata"]["source_url"])
+    kept_urls: list[str] = []
+    for url in order:
+        fr = franchise_of(url)
         if fr is not None:
             if fr in banned_franchises or fr in seen_franchises:
                 continue
             seen_franchises.add(fr)
-        deduped.append(c)
-    candidates = deduped
-    if not candidates:
+        kept_urls.append(url)
+        if len(kept_urls) >= config.PROMPT_SHOWS:
+            break
+    if not kept_urls:
         return RecommendResponse(
             query=query,
             recs=[],
@@ -168,7 +225,12 @@ def recommend(query: str, user_id: str = "anon") -> RecommendResponse:
             message="The only matches were the shows you named (or their sequels). Try a broader query.",
         )
 
-    # Map of allowed citation URLs -> canonical title, from the retrieved set.
+    # Merge each kept show into ONE candidate (synopsis + its top review summaries,
+    # rebuilt from anime.json) so Claude always sees plot AND viewer sentiment
+    # regardless of which chunk drove retrieval — and never two entries per show.
+    candidates = [c for url in kept_urls if (c := _merged_candidate(url, show_score[url]))]
+
+    # Map of allowed citation URLs -> canonical title, from the surviving set.
     allowed = {c["metadata"]["source_url"]: c["metadata"]["anime_title"] for c in candidates}
     cand_by_url = {c["metadata"]["source_url"]: c for c in candidates}
 

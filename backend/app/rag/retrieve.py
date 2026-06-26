@@ -17,6 +17,14 @@ class Candidate(dict):
 
 
 def retrieve(query: str, k: int | None = None, n: int | None = None) -> list[Candidate]:
+    """Dense recall over chunks (cheap, local) -> collapse to distinct shows ->
+    rerank the shows (Voyage, TPM-bounded).
+
+    With multiple chunks per show (synopsis + reviews), the dense pool can hold
+    several chunks of one show; we keep each show's best dense hit (the matching
+    chunk — often a review for vibe queries) and rerank only `n` distinct shows so
+    the reranker call stays under the free-tier 10K-tokens/minute cap.
+    """
     k = k or config.RETRIEVE_K
     n = n or config.RERANK_N
 
@@ -33,13 +41,28 @@ def retrieve(query: str, k: int | None = None, n: int | None = None) -> list[Can
     if not docs:
         return []
 
-    reranked = voyage_rerank(query, docs, top_k=n)
+    # Collapse to distinct shows, keeping the best dense hit per show (Chroma
+    # returns nearest-first, so the first chunk seen for a url is its best).
+    seen: set[str] = set()
+    pool_docs: list[str] = []
+    pool_metas: list[dict] = []
+    for doc, meta in zip(docs, metas):
+        url = meta.get("source_url")
+        if url in seen:
+            continue
+        seen.add(url)
+        pool_docs.append(doc)
+        pool_metas.append(meta)
+        if len(pool_docs) >= n:
+            break
+
+    reranked = voyage_rerank(query, pool_docs, top_k=len(pool_docs))
     out: list[Candidate] = []
     for r in reranked:
         out.append(
             Candidate(
-                text=docs[r.index],
-                metadata=metas[r.index],
+                text=pool_docs[r.index],
+                metadata=pool_metas[r.index],
                 rerank_score=r.relevance_score,
             )
         )

@@ -28,8 +28,22 @@ GEN_MODEL = "claude-sonnet-4-6"
 # Vector store
 COLLECTION = "anime"
 
-# Retrieval params: retrieve broad with dense vectors, then rerank tight.
-RETRIEVE_K = 30   # dense candidates pulled from Chroma
-RERANK_N = 10     # candidates kept after Voyage rerank (pool the LLM draws cited recs from)
+# Retrieval params: dense recall broad (local/cheap), collapse to distinct shows,
+# then rerank tight. With multi-chunk retrieval (synopsis + review chunks), the
+# dense pool RETRIEVE_K is large for recall, but only RERANK_N *distinct shows*
+# are reranked so the Voyage call stays under the free-tier 10K-tokens/min cap.
+RETRIEVE_K = 80   # dense chunk candidates pulled from Chroma (local, no Voyage cost)
+RERANK_N = 30     # distinct shows reranked by Voyage (TPM-bounded — do not raise blindly)
+PROMPT_SHOWS = 12  # distinct shows sent to Claude after the per-franchise collapse
+
+# Phase A — community recommendation graph (AniList `recommendations`).
+COMMUNITY_INJECT_MAX = 5   # max curated community recs injected for a named-show query
+
+# Phase B — review-augmented retrieval (AniList `reviews`). Summaries only; the
+# enrichment pass stores already-filtered reviews per these bounds.
+REVIEW_CHUNKS_PER_SHOW = 3  # cap embedded review summaries per show
+REVIEW_MIN_LEN = 20         # drop truncated / one-word summaries
+REVIEW_MAX_LEN = 300        # keep summaries short (spoiler + cost control)
+REVIEW_MIN_HELPFUL = 2      # min helpful votes — drop troll/low-effort reviews
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)

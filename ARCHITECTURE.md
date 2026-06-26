@@ -122,14 +122,20 @@ What actually happens on `POST /recommend {query, user_id}`:
 2. **Log the query** to the DB (`store/prefs.py`) for taste inference.
 3. **Embed the query** (`services.voyage_embed`, `input_type="query"`) — served
    from an in-memory LRU cache if this exact query was embedded before.
-4. **Dense search** ChromaDB for the top 30 nearest shows (`rag/retrieve.py`).
+4. **Dense search** ChromaDB over the chunk pool (synopsis + review chunks),
+   then **collapse to distinct shows** keeping each show's best hit, and **rerank**
+   those shows with Voyage `rerank-2.5` (`rag/retrieve.py`). Collapsing before the
+   rerank keeps the call under the free-tier 10K-tokens/min cap.
 5. **Apply feedback** — drop any shows the user thumbs-downed (`store/feedback.vote_context`).
-6. **Rerank** the survivors with Voyage `rerank-2.5` → top 10 (`rag/retrieve.py`).
+6. **Community injection** (`recommend_graph.py`) — if the user *named* a show,
+   seed the pool with its top AniList community "if you liked X" recs (in-corpus,
+   vote-weighted, canonicalized to franchise flagships).
 7. **No-sequel filtering** (`franchise.py`) — drop candidates from any franchise
-   the user *named* in the query (so "like AOT" never returns an AOT season), and
-   collapse multiple entries of one franchise to a single rec.
-8. **Build the prompt** — number the surviving candidates with their titles + URLs,
-   plus a preference note ("user liked X, disliked Y") (`rag/recommend.py`).
+   the user *named* (so "like AOT" never returns an AOT season), collapse multiple
+   entries of one franchise to a single rec, and trim to `PROMPT_SHOWS` shows.
+8. **Build the prompt** — for each show, merge its synopsis + top review summaries
+   so Claude sees plot *and* viewer sentiment; number them with titles + URLs, plus
+   a preference note ("user liked X, disliked Y") (`rag/recommend.py`).
 9. **Call Claude** with **structured output** (a JSON schema) so the response is
    guaranteed-valid `{recs: [{title, reasoning, sources[]}]}`.
 10. **Validate citations in code** — drop any rec whose `sources[]` URLs aren't in
@@ -176,6 +182,36 @@ unchanged); the alternative — storing a `franchise_id` in Chroma metadata — 
 force a re-embed on every adjustment. Query-naming is detected with title
 *aliases* (the part before a subtitle `:`/`-`, season/part markers stripped) so a
 user typing "Demon Slayer" matches the corpus's "Demon Slayer: Kimetsu no Yaiba".
+
+### 5.2c Two extra signals from the same AniList API (no scraping)
+Synopsis embeddings are **plot-descriptive**, but users query in **experiential /
+comparative** language ("made me cry", "like AOT but for the politics") that
+synopses don't contain. Two enrichments — both from the AniList API we already
+call, fetched in a separate per-show pass (`ingest/anilist_enrich.py`) because
+AniList's query-complexity cap forbids nesting them in the 50-per-page list query:
+
+- **Community recommendation graph (`recommend_graph.py`).** AniList's
+  `recommendations` are vote-weighted "if you liked X, watch Y" edges. When a query
+  *names* a show, we inject its top in-corpus recs as candidates. Each rec is
+  canonicalized to its **franchise flagship** (so "AOT Season 3 Part 2" → "Attack
+  on Titan" and "Code Geass" + "R2" → one entry), and same-franchise recs are
+  dropped by the no-sequel filter. This answers the highest-intent queries with
+  *human-curated* matches instead of pure vector similarity — at zero embedding cost
+  (it's a request-time `anime.json` join, like franchises).
+- **Review-augmented retrieval.** Top review **summaries** (not bodies — bodies are
+  spoiler-laden) become extra embedded chunks per show, so vibe queries finally have
+  matching vocabulary to retrieve against. Verified: "made me ugly cry" now surfaces
+  Clannad After Story, Your Lie in April, Plastic Memories — which synopsis-only
+  retrieval missed.
+
+Two consequences shaped the retrieval code. (1) Multiple chunks per show would let
+one popular show flood the results, so `retrieve()` **collapses the dense pool to
+distinct shows before the rerank** — which also bounds the rerank's token count
+under the free tier's 10K/min cap. (2) The chunk that *retrieved* a show might be a
+review, so the prompt builder **re-merges each kept show's synopsis + reviews from
+`anime.json`**, guaranteeing Claude always sees plot and sentiment and never two
+entries for one show. Review chunks reuse the show's `source_url`, so citation
+validation and franchise collapse keep working unchanged.
 
 ### 5.3 Vector DB: ChromaDB (not Qdrant)
 A real fork. Qdrant offers **native hybrid search** (dense + BM25 sparse), which
@@ -363,12 +399,14 @@ cache removes one of the two Voyage calls on repeated queries.
 
 ## 11. Limitations & future work
 
-- **Corpus size** — 150 popular shows. Scaling to thousands is now just a larger
-  ingestion run: bump `anilist --target`, then `embed_index` only embeds the new
-  titles (it's incremental on chunk id). At thousands, revisit hybrid search / a
-  hosted vector DB.
-- **Single data source** — AniList only. Reddit/MAL review ingestion was scoped
-  out; adding it would enrich the retrieved context with opinion, not just synopsis.
+- **Corpus size** — 1,000 popular shows (synopsis + review chunks). Scaling further
+  is just a larger ingestion run: bump `anilist --target`, re-run `anilist_enrich`,
+  then `embed_index` only embeds new chunk ids (incremental + resumable per batch).
+  At many thousands, revisit hybrid search / a hosted vector DB.
+- **Data sources** — AniList only (synopsis + community recs + review summaries).
+  Reddit ingestion (comparison megathreads) is the next source but needs entity
+  resolution + OAuth; MAL/Jikan reviews are an easy fallback if AniList coverage
+  thins for niche titles.
 - **Rate limiter is per-instance** — move to Redis if scaling horizontally (§5.5).
 - **No semantic dedup across a session** — could feed "recently recommended" into
   the next query for more diversity.
@@ -381,21 +419,23 @@ cache removes one of the two Voyage calls on repeated queries.
 
 ```
 backend/app/
-  config.py          model ids, retrieval params (RETRIEVE_K=30, RERANK_N=10), paths
+  config.py          model ids, retrieval params (RETRIEVE_K/RERANK_N/PROMPT_SHOWS), paths
   services.py        Voyage/Anthropic/Chroma clients · throttle+retry · embedding cache
   db.py              SQLAlchemy engine + tables (SQLite local / Postgres prod)
   meta.py            anime.json metadata lookup by URL
-  franchise.py       union-find over AniList relations → no-sequel filtering
+  franchise.py       union-find over AniList relations → no-sequel filtering + flagship pick
+  recommend_graph.py AniList community "if you liked X" graph (Phase A injection)
   models.py          pydantic request/response models
   ratelimit.py       in-memory per-IP sliding-window cost guard
   main.py            FastAPI app · endpoints · CORS
   ingest/
     anilist.py       AniList GraphQL fetch (+ franchise relations) → anime.json
-    chunk.py         show → embeddable chunk + citation metadata
-    embed_index.py   Voyage embed → ChromaDB upsert (incremental on chunk id)
+    anilist_enrich.py  per-show pass adding community recs + review summaries
+    chunk.py         show → synopsis chunk + review chunks + citation metadata
+    embed_index.py   Voyage embed → ChromaDB upsert (incremental, resumable per batch)
   rag/
-    retrieve.py      embed query → Chroma top-30 → Voyage rerank top-10
-    recommend.py     prompt + Claude structured output + citation validation + vote personalization
+    retrieve.py      embed query → dense pool → collapse to shows → Voyage rerank
+    recommend.py     community injection + no-sequel + synopsis/review merge + Claude + citation validation
     profile.py       taste inference (from queries or AniList watch history)
   store/
     prefs.py         query history
